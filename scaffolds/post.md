@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-categories: 其他
+categories: other
 tags: [other,生活]
 ---
 这是摘要

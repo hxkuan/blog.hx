@@ -2,7 +2,7 @@
 title: hexo简介
 categories: other
 tags:
-  - 其他
+  - other
   - 生活
 date: 2017-10-10 15:02:43
 ---
