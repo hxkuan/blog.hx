@@ -3,7 +3,7 @@ title: Markdown基础
 categories: other
 tags:
   - other
-date: 2017-10-10 16:39:07
+date: 2017-10-10
 ---
 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 ## Markdown 的设计哲学
