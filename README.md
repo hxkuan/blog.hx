@@ -24,3 +24,13 @@ $ npm install
 - scaffolds [模版](https://hexo.io/zh-cn/docs/writing.html) 文件夹。当您新建文章(hexo new ..)时，Hexo 会根据 scaffold 来建立文件。
 - source 资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。
 - themes [主题](https://hexo.io/zh-cn/docs/themes.html)文件夹
+
+## 基本操作
+$ hexo n ‘name’
+$ hexo g
+$ hexo s
+$ hexo d
+$ hexo s -g
+```
+几个常见命令来新建、更新、预览、同步、更新预览你的博客。
+这一节，我们来分享一下Hexo里关于分类和标签的设置技巧。

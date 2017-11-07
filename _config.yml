@@ -56,6 +56,7 @@ index_generator:
 default_category: uncategorized
 category_map:
       其他: other
+      编程: 编程
 tag_map:
 
 # Date / Time format
