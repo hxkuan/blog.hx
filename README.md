@@ -26,6 +26,7 @@ $ npm install
 - themes [主题](https://hexo.io/zh-cn/docs/themes.html)文件夹
 
 ## 基本操作
+```
 $ hexo n ‘name’
 $ hexo g
 $ hexo s
