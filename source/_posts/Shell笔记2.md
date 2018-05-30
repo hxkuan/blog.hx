@@ -1,5 +1,5 @@
 ---
-title: Shell笔记（二）
+title: Shell笔记(二)
 categories: 笔记
 tags:
   - 编程

@@ -1,5 +1,5 @@
 ---
-title: Shell笔记（三）
+title: Shell笔记(三)
 categories: 笔记
 tags:
   - 编程
@@ -11,64 +11,69 @@ date: 2018-05-15 15:23:04
 # Shell介绍
 ## 字符串和数组
 ### 常用字符串指令
-- #### 字符串长度 `${#variableName}`
-- #### 字符串截取 `${variableName:<pos> <len>}`
-    ```shell
-    #!/bin/bash
-    str ="0123456789"
-    echo ${str:1} #输出：123456789
-    echo ${str:1:2} #输出：12
-    echo ${str:-3} #当<pos>开始位置为负数时，自动变为0。输出：0123456789
-    ```
-- #### 查找
-    Shell通过`expr`实现查找功能
-    >`expr index <string> <chars>`,查找<chars>首字母在<string>中出现的位置，没有则返回0。
+- #### 字符串长度
+```
+len=${#variableName}
+```
 
-    >`expr` 还有其他的指令，如：
-    > 1. `expr substr <string> <pos> <len>`  相当于`${variableName:<pos> <len>}`
-    > 2. `expr length <string>`   相当与`${#variableName}`
-    > 3. `expr match <string> <regexp>` 正则匹配
+- #### 字符串截取 
+```shell
+#!/bin/bash
+#${variableName:<pos> <len>}
 
+str ="0123456789"
+echo ${str:1} #输出：123456789
+echo ${str:1:2} #输出：12
+echo ${str:-3} #当<pos>开始位置为负数时，自动变为0。输出：0123456789
+```
+- #### expr
+```
+expr index <string> <chars> #查找<chars>首字母在<string>中出现的位置，没有则返回0。
+expr substr <string> <pos> <len> #相当于${variableName:<pos> <len>}
+expr length <string> #相当与${#variableName}
+expr match <string> <regexp> #正则匹配
+```
+      
 ### 数组
 **bash支持一维数组，但不支持多维数组，并且没有限定数组大小**
-#### 定义
-```shell
-arrName=(v0 v1 v2 ...)
-```
-或
-```shell
-arrName=(
-    v0
-    v1
-    v2
-    ..
-)    
-```
-或者
-```shell
-arrName[0]=v0
-arrName[1]=v1
-...
-```
-#### 获取
-```shell
-echo ${array_name[2]} #读取下标为2的元素
-echo ${array_name[*]} #读取所有元素
-echo ${array_name[@]} #读取所有元素
+- #### 定义
+    ```shell
+    arrName=(v0 v1 v2 ...)
+    ```
+    或
+    ```shell
+    arrName=(
+        v0
+        v1
+        v2
+        ..
+    )    
+    ```
+    或者
+    ```shell
+    arrName[0]=v0
+    arrName[1]=v1
+    ...
+    ```
+- #### 获取
+    ```shell
+    echo ${array_name[2]} #读取下标为2的元素
+    echo ${array_name[*]} #读取所有元素
+    echo ${array_name[@]} #读取所有元素
 
-echo ${#array_name[*]} #获取数组长度
-echo ${#array_name[@]} #获取数组长度
-echo ${#array_name[1]} #获取数组中单个元素的长度
-```
-输出
-```shell
-value2
-value0 value1 value2 value3
-value0 value1 value2 value3
-4
-4
-6
-```
+    echo ${#array_name[*]} #获取数组长度
+    echo ${#array_name[@]} #获取数组长度
+    echo ${#array_name[1]} #获取数组中单个元素的长度
+    ```
+    输出
+    ```shell
+    value2
+    value0 value1 value2 value3
+    value0 value1 value2 value3
+    4
+    4
+    6
+    ```
 
 ## 函数
 ### 基础
