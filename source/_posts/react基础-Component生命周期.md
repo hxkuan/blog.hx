@@ -35,21 +35,22 @@ update模块有4个方法，依次为：
 - void componentWillUpdate()
 - void componentDidUpdate()
 
->componentWillUpdate/componentDidUpdate与componentWillMount/componentDidMount类似，区别在于，前者只有在挂载的时候会被调用；而后者在以后的每次更新渲染的时候都会被调用，其它的在这就不赘述；
->
->先说说componentWillReceiveProps       。props是父组件传递给子组件的，父组件发生render的时候子组件就会调用componentWillReceiveProps（不管props有没有更新，也不管父子组件之间有没有数据交换）之后在调用shouldComponentUpdate。所以如果有需要使用props初始化值时，最正确的做法是同时在constructor和componentWillReceiveProps中初始化。
+>先说说componentWillReceiveProps。props是父组件传递给子组件的，父组件发生render的时候子组件就会调用componentWillReceiveProps（不管props有没有更新，也不管父子组件之间有没有数据交换）之后在调用shouldComponentUpdate。所以如果有需要使用props初始化state值时，最正确的做法是同时在constructor中初始化的同时在componentWillReceiveProps中setState。
 >
 >shouldComponentUpdate方法是在组件mount之后，每次props或者state改变时会被调，该函数用来判断是否需要重新渲染组件。
+>
+>componentWillUpdate/componentDidUpdate，更新界面前后被调用。这两个周期函数会在shouldComponentUpdate返回true，或者使用this.forceUpdate()时启用。
 >
 
 ### umount模块
 unmount模块只有两个方法，依次为：
 - void componentWillUnmount()
-- void componentDidUnmount()
 
 >这2个方法也只会被调用一次。一般在componentWillUnmount中注册事件，而在componentDidMount里面注册的事件需要在这里删除
 >
 >注意：调用componentWillUnmount的时候，虽然整个组件是正常运行状态，但由于非同步调用，所以其实不建议在这里使用操作本组件的方法，正确的做法是先在运行状态上面操作完成后unmount组件。
 >
 
+## 生命周期图解
+![image](/images/react_lifecycle.png)
 
