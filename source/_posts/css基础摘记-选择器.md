@@ -1,5 +1,5 @@
 ---
-title: css基础摘记-选择器
+title: CSS基础摘记-选择器
 categories: 笔记
 tags:
   - 编程
