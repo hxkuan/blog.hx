@@ -2,7 +2,7 @@
 title: react基础-Component生命周期
 categories: 笔记
 tags:
-
+  - js
   - 前端
   - 编程
   - 基础

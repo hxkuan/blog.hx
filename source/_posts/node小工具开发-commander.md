@@ -5,6 +5,7 @@ tags:
   - node
   - npm
   - 生活
+  - js
 date: 2017-10-13
 ---
 

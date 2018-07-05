@@ -4,6 +4,7 @@ categories: 笔记
 tags:
   - 编程
   - 基础
+  - shell
 date: 2018-05-15 15:23:04
 ---
 shell 是一种脚本语言，常见的脚本解析器有bash，sh，csh等。shell文件的后缀为`.sh`。
