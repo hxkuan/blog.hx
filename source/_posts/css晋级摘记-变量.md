@@ -1,6 +1,6 @@
 ---
 title: 'CSS晋级摘记-变量 '
-categories: other
+categories: 笔记
 tags:
   - css
   - 编程
