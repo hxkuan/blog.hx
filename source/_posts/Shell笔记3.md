@@ -1,5 +1,5 @@
 ---
-title: Shell笔记(三)
+title: Shell笔记-字符串、数组、函数
 categories: 笔记
 tags:
   - 编程

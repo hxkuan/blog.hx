@@ -1,5 +1,5 @@
 ---
-title: Shell笔记(二)
+title: Shell笔记-运算、条件、循环
 categories: 笔记
 tags:
   - 编程

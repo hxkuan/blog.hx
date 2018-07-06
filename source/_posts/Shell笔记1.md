@@ -1,5 +1,5 @@
 ---
-title: Shell笔记(一)
+title: Shell笔记-入门、变量
 categories: 笔记
 tags:
   - 编程
