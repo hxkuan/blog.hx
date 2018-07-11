@@ -1,6 +1,6 @@
 ---
 title: JavaScript基础-面向对象设计
-categories: other
+categories: 笔记
 tags:
   - js
   - 编程
