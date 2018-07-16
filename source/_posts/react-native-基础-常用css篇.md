@@ -56,7 +56,7 @@ padding, paddingTop/.., paddingHorizontal/paddingVertical,
 
 position['absolute','relative'], top/right/bottom/left,
 
-#### FloxBox样式
+#### FlexBox样式
 flex, flexDirection['row','column'], flexWrap['wrap','nowrap'],
 
 alignSelf['auto','flex-start','flex-end','center','stretch'],
