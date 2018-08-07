@@ -70,7 +70,7 @@ date: 2018-06-06 15:58:49
 - #### 原型继承
     只能继承【原型属性】
     ```
-    Son.prototype = new Person();
+    Son.prototype = Object.create(Person.protptype); //或者 Son.prototype = new Person();
     ...
     ```
 
