@@ -6,7 +6,7 @@ tags:
   - npm
   - 基础
   - docker
-date: 2018-09-18 14:19:22
+date: 2018-09-17 14:19:22
 ---
 **首先，感谢大神rlidwka提供了sinopia，使得私有npm只要简简单单的就能搭建成功。**sinopia（[GitHub](https://github.com/rlidwka/sinopia)）是什么，这边就不在解释了，有需要的自己去github上面看，下面简单的说明一下使用。
 <!-- more-->
