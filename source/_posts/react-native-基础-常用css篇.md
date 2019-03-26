@@ -2,10 +2,10 @@
 title: react-native 基础-常用css篇
 categories: 笔记
 tags:
-  - 笔记
-  - 后端
   - 基础
   - js
+  - react
+  - react native
 date: 2018-04-25 18:18:36
 ---
 RN的样式是CSS的一个子集，为此整理一份常用的RN CSS样式，以此作为备忘录。
